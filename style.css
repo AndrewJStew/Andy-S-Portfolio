@@ -1,0 +1,68 @@
+:root {}
+
+body {
+    background: #ececec;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+}
+
+#boxgrid {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    height: 70vh;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "abt bx1 bx1"
+        "abt bx2 bx3"
+        "abt bx4 bx5";
+}
+
+#about {
+    grid-area: abt;
+}
+
+#box1 {
+    grid-area: bx1;
+}
+
+#box2 {
+    grid-area: bx2;
+}
+
+#box3 {
+    grid-area: bx3;
+}
+
+#box4 {
+    grid-area: bx4;
+}
+
+#box5 {
+    grid-area: box5;
+}
+
+.contact {
+    background-color: #004669;
+    font-family: Tahoma, Arial;
+    font-size: 0.7em;
+    color: White;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    height: 4em;
+}
+
+.boxgridarea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    align-content: end;
+}
